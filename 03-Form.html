@@ -2,21 +2,87 @@
 <html lang="en" >
     <head>
         <title>Form</title>
+        <style>
+            body{
+                background-color: blanchedalmond;
+                
+            }
+            .form{
+                border-color: cyan;
+                border-radius: 50px;
+                display: block;
+                box-align
+                box-sizing: content-box;
+                box-shadow: inset;
+                background-color: white;
+            }
+            .form:hover{
+                opacity: 70%;
+
+            }
+
+            .btn{
+                display:block;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: medium;
+
+                
+                width: 30%;
+
+                background-color: rgb(66, 66, 136);
+                border-radius: 7px;
+                border-color:blue;
+                padding: 3px;
+                 }
+                 .lbl{
+                    margin-right: 50px;
+                    font-size: medium;
+                    padding:2px;
+                    font-family: 'Courier New', Courier, monospace;
+                 }
+                 .img{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                 }
+                 .div-class{
+                    margin-bottom: auto;
+                    margin-left: 50px;
+                    margin-right: 100px;
+                 }
+                 .small{
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    
+                 }
+        </style>
     </head>
     <body>
-        <form>
-            <label>Enter your first name</label>
-            <input type="text" placeholder="Your first name please"><br><br>
-            <lable>Enter your middle name</lable>
-            <input type="text" placeholder="Your middle name please"><br><br>
-            <label>Enter your last name</label>
-            <input type="text" placeholder="Your last Name please"><br><br>
-            <label>Enter your age</label>
-            <input type="number" placeholder="Your age please"><br><br>
-            <label>Enter your valid Email</label>
-            <input type="email" name="email" placeholder="xyz@gmail.com"><br><br>
-            <label>Enter your URL website(if any)</label>
-            <input type="text"  placeholder="http//example.com"><br><br>
+        <br>
+        <br>
+        <div class="div-class">
+        <form class="form">
+            <br>
+            <h3 style="text-align: center; font-size:  30px;">Facebook</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSryJjVd_41lxLfFqEChN4OwKBVX4T53eLGg&usqp=CAU" height="150px" width:"100px" class="img">
+            <br>
+            <label class="lbl" >Enter your Username:     </label>
+            <input type="text" placeholder="Your Username please" required><br><br>
+           <br>
+            <label class="lbl">Enter your password:    </label>
+            <input type="text" placeholder="Your password please" required><br><br>
+            <br>
+            <small class="small"> Forget Password ?</small>
+            <a href="">Sign up</a>
+            <br>
+            <br>
+            <button class="btn">Login</button>
+            <br>
+            <br>
         </form>
+        </div>
     </body>
 </html>
