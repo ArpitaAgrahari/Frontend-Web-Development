@@ -7,7 +7,7 @@
 </head>
 <body>
     <!--craete a object and access it using constructor--->
-    <script>
+    <!--<script>
     
     const Student={
         name:"Arpita",
@@ -15,7 +15,18 @@
     };
     document.write("Name: "+Student.name+"<br>");
     document.write("Roll no: "+Student.rollno+"<br>");
-</script>
+</script>-->
+
+  <script>
+    const Student = {
+        name: "Arpita",
+        greet: function () {
+            return "Good Morning";
+        },
+    };
+    document.write("Hello " + Student.name + "! Wishing a very " + Student.greet()+"!!");
+
+  </script>
 
 
 </body>
