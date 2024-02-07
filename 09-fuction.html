@@ -21,11 +21,13 @@
             </script>-->
             <!--take input from user and add them and display the result--->
             <script>
-                function add(){
-                    var a = parseInt(document.getElementById("num1").value);
-                    var b = parseInt(document.getElementById("num2").value);
-                    var c = a+b;
-                    document.getElementById("result").value = c;
+                
+                    let a = Number(prompt("Enter first number"));
+                    let b = Number(prompt("Enter second number"));
+                    add(a,b);
+                function add(a,b){
+                let result = a+b;
+                document.write("The sum of "+a+" and "+b+" is "+result);
                 }
                 </script>
             
