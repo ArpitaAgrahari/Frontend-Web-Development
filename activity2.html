@@ -7,21 +7,22 @@
 </head>
 <body>
     <!--//code using try and catch block-->
-    <script>
-        try{
-            let a = Number(prompt("Enter first number"));
-            let b = Number(prompt("Enter second number"));
-            if(b==0){
-                throw "Divide by zero error";
+    <!--//take input from user and perform addditon using functtion ,if input is null display error message that input is not given by user using throw try and catch -->
+        <script>
+            try{
+                let a = Number(prompt("Enter first number"));
+                let b = Number(prompt("Enter second number"));
+                if(a==null || b==null){
+                    throw "Input is not given by user";
+                }
+                else{
+                    let result = a+b;
+                    document.write("The sum of "+a+" and "+b+" is "+result);
+                }
             }
-            else{
-                let result = a/b;
-                document.write("The result is "+result);
+            catch(err){
+                document.write(err);
             }
-        }
-        catch(err){
-            document.write(err);
-        }
-        </script>
+            </script>
 </body>
 </html>
