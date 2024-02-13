@@ -32,7 +32,19 @@
 
     <!-- //on any key press output to be alert message -->
     <input type="text" onkeypress="alert('key pressed')">
+    <br>
+    <br>
+    <!--form event-->
+    <form action="">
+        <input type="text" onfocus="this.style.backgroundColor = 'yellow'">
+        <br>
+        <input type="text" onblur="this.style.backgroundColor = 'green'">
+        <br>
+        <input type="text" onselect="alert('text selected')">
+        <br>
+        <input type="text" onchange="alert('text changed')">
 
+    </form>
 
 </body>
 </html>
