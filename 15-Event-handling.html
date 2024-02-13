@@ -7,6 +7,8 @@
 </head>
 <body>
     <script>
+        //types of event handler
+        
         //event hndling and event
         //event is an action that occurs as a result of user action or system generated event
         //event handling is the process of capturing, processing and responding to an event
@@ -22,6 +24,9 @@
         function func2(){
             document.getElementById('btn2').style.backgroundColor = 'yellow';
         }
+        function fun5(){
+            document.getElementById("focus")
+        }
 
     </script>
     <button id="btn" onclick="document.getElementById('btn').style.color = 'blue'">Click</button>
@@ -35,7 +40,7 @@
     <br>
     <br>
     <!--form event-->
-    <form action="">
+    <!-- <form action="">
         <input type="text" onfocus="this.style.backgroundColor = 'yellow'">
         <br>
         <input type="text" onblur="this.style.backgroundColor = 'green'">
@@ -44,6 +49,10 @@
         <br>
         <input type="text" onchange="alert('text changed')">
 
+    </form> -->
+
+    <form>
+        <input type="text" id="focus" onfocus="fun5()">
     </form>
 
 </body>
