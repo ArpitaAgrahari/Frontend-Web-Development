@@ -6,6 +6,33 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        //event hndling and event
+        //event is an action that occurs as a result of user action or system generated event
+        //event handling is the process of capturing, processing and responding to an event
+        //event handling is done using event listeners
+        //event listeners are used to listen to the events and respond to them
+
+        //scrpt for func()
+        function func(){
+           document.getElementById('btn').style.color='red';
+        }
+        //to chnage the color of the button to red when clicked 
+        //mouse out of the button to change the color to blue backgrounf color to yellow
+        function func2(){
+            document.getElementById('btn2').style.backgroundColor = 'yellow';
+        }
+
+    </script>
+    <button id="btn" onclick="document.getElementById('btn').style.color = 'blue'">Click</button>
+    <button id="btn" onclick = "func()">Click</button>
+    <button id = "btn2" onclick ="func2()">Click</button>
+    <button id = "btn2" onmouseout = "document.getElementById('btn2').style.backgroundColor = 'blue'">Click</button>
+
+
+    <!-- //on any key press output to be alert message -->
+    <input type="text" onkeypress="alert('key pressed')">
+
+
 </body>
 </html>
