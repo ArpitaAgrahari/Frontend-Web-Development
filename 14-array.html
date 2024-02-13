@@ -7,17 +7,29 @@
 </head>
 <body>
     <script>
-        let arr = [1,2,3,4,5,6];
+        let arr = [1,2,3,4,5];
         let arr2 = new Array(7,8);
         // for(let i=0;i<arr.length;i++){
         //     document.write(arr[i]+" ");
         // }
         
-        //implementing for each loop
-        arr.forEach(function(value){
-            document.write(value+" ");
-        });
-        
+
+        //using foreach loop
+        // arr.forEach(function(value){
+        //     document.write(value+" ");
+        // });
+
+
+        //using arrow function
+        // arr.forEach((value)=>{
+        //     document.write(value+" ");
+        // });
+
+
+        //using for in loop
+        for(let index in arr){
+            document.write(arr[index]+" ");
+        }
     </script>
 </body>
 </html>
