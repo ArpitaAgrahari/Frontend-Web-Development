@@ -46,8 +46,8 @@
         document.write("The number of h2 tags: "+b); -->
 
 
-        
-    </script>
+
+    <!-- </script>
     <input type = "radio" name="gender" value="Male">Male</input>
     <br>
     <input type = "radio" name="gender" value="Female">Female</input>
@@ -59,6 +59,25 @@
         const a = document.getElementsByName("gender").length;
         document.write("The number of labels: "+a);
         
+    </script> -->
+
+
+<!--     
+    //query selector
+    //querySelector is a method
+    //querySelector is used to get the first element that matches the specified css selector(s) in the document -->
+    <input type="number" name="name" id="demo1">
+    <input type="number" name="name2" id="demo2"><br>
+    <button onclick="add()" id="demo3">ADD</button>
+    <p id="demo"></p>
+
+    <script>
+        let j=document.getElementById("demo1").value;
+        let k=document.getElementById("demo2").value;
+        function add(){
+            let c=a+b;
+            document.getElementById("demo").innerHTML=c;
+        }
     </script>
 </body>
 </html>
