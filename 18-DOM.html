@@ -44,9 +44,21 @@
         document.write("The number of p tags: "+a+"<br>");
         const b = document.getElementsByTagName("h2").length;
         document.write("The number of h2 tags: "+b); -->
+
+
+        
     </script>
+    <input type = "radio" name="gender" value="Male">Male</input>
+    <br>
+    <input type = "radio" name="gender" value="Female">Female</input>
+    <br>
+    <input type = "radio" name="gender" value="Transgender">Transgender</input>
+    <br>
     <script>
-        //craete three labels and using getelementbyname count it
+        //create three labels and using getelementbyname count it
+        const a = document.getElementsByName("gender").length;
+        document.write("The number of labels: "+a);
+        
     </script>
 </body>
 </html>
