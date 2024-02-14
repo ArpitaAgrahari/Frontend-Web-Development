@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- //write the paragraph and again overwrite it and change the color of page to aqua -->
+    <p id="demo">This is a paragraph</p>
+    <input type="text" name="name" id="name"></input>
+    <br>
+    <script>
+        document.getElementById("demo").innerHTML = "Updated content in the given paragraph";
+        document.body.style.backgroundColor = "aqua";
+        //paragraph count
+        const a = document.getElementsByTagName("p").length;
+        document.write("The number of p tags: "+a+"<br>");
+
+        const b = document.getElementsByName("name").length;
+        document.write("The number of input tags: "+b);
+    </script>
+</body>
+</html>
