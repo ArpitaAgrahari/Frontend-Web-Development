@@ -64,14 +64,31 @@
         // printArray(arr);
 
         //map function
-        let arr = [1,2,3,4,5];
-        let arr2 = new Array(7,8);
-        let arr3 = arr.map((value)=>{
-            return value*2;
-        });
-        printArray.forEach((value)=>{
-            document.write(value+" ");
-        });
+        // let arr = [1,2,3,4,5];
+        // let arr2 = new Array(7,8);
+        // let arr3 = arr.map((value)=>{
+        //     return value*2;
+        // });
+        // printArray.forEach((value)=>{
+        //     document.write(value+" ");
+        // });
+
+
+        //create string array and apply push and pop
+        //functionalities of shift and unshift
+        //shift and unshift are used to add and remove elements from the beginning of the array
+        let arr = ["Mango","Apple","Banana","Grapes"];
+        arr.push("Orange");
+        printArray(arr);
+        document.write("<br>");
+        arr.pop();
+        printArray(arr);
+        function printArray(arr){
+            for(let value of arr){
+                document.write(value+" ");
+            }
+        }
+
 
 
     </script>
