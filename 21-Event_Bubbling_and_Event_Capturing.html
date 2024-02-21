@@ -6,6 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h3>Bubbling</h3>
+    <div id="div1" style="border: 1px solid black; padding: 10px;">
+        <h3>Div 1</h3>
+        <button id="btn1">Button 1</button>
+    </div>
+    <script>
+        document.getElementById("btn1").addEventListener("click", function(){
+            alert("Button 1 clicked");
+        });
+        document.getElementById("div1").addEventListener("click", function(){
+            alert("Div 1 clicked");
+        });
+    </script>
 </body>
 </html>
