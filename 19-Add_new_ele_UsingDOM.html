@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Adding new element using DOM</h3>
+    <script>
+        var e1=document.createElement("p");
+        var text=document.createTextNode("This is a new paragraph");
+        e1.appendChild(text);
+        document.body.appendChild(e1);
+        //e1.remove();
+    </script>
+    <h3>Adding element to parent elem</h3>
+    <div id="div1">
+        <p id="p1">This is a paragraph</p>
+    </div>
+</body>
+</html>
