@@ -18,5 +18,12 @@
     <div id="div1">   <!--create a div element-->
         <p id="p1">This is a paragraph</p>   <!--create a paragraph element-->
     </div>
+    <script>
+        var e2=document.createElement("p");  //create a new h1 element
+        var text2=document.createTextNode("This is a new heading");   //create a text node
+        var parent=document.getElementById("div1");  //get the div element
+        e2.appendChild(text1);   //add the text to the created element
+        parent.appendChild(e2);  //add the created element to the div
+    </script>
 </body>
 </html>
