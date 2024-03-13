@@ -8,12 +8,17 @@
     <script>
     $(document).ready(function(){
         $("#btn1").click(function(){
-            $("p").before("hello");
+            $("#btn1").click(function(){
+                alert($("h1").text());
+            });
+            $("#btn2").click(function(){
+                alert($("a").html());
+            });
+            $("#btn3").click(function(){
+                alert($("a").attr("href"));
+            });
+            
         });
-        $("#btn2").click(function(){
-            $("p").after("how are you");
-        });
-    });
     </script>
 </head>
 <body>
