@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+    $(document).ready(function(){
+        $("button").click(function(){
+        $("div").remove();
+    });
+    });
+    </script>
+    <style>
+        .highlight{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>List Item</h2>
+    <ul id="list">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Juice</li>
+    </ul>
+    <button id="addBtn">Add class to Odd items</button>
+    <button id="toggleBtn">Toggle class to Even items</button>
+    <button id="removeBtn">Remove class from All items</button>
+    <script>
+        $(document).ready(function(){
+            $("#addBtn").click(function(){
+                $("#list li:odd").addClass("highlight");
+            });
+            $("#toggleBtn").click(function(){
+                $("#list li:even").toggleClass("highlight");
+            });
+            $("#removeBtn").click(function(){
+                $("#list li").removeClass("highlight");
+            });
+        }
+    </script>
+</body>
+</html>
