@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const Student={
+            "name":"Emily",
+            "age":21,
+            "CGPA":9.8,
+            "course":"INT219"
+        }
+        var student1=JSON.stringify(Student);//stringify converts object to string
+        document.write(student1+"<br><br>");
+        for(i in Student){
+            document.write(Student[i]+"<br>");
+        }
+        var student2=JSON.stringify(Student,null,2);//if we do thid then the otput should display the onject the same we wrote
+        document.write("<pre>"+student2+"<br></pre>");//we use pre tag because sometimes browser ignore the white spaces
+    </script>
+    <h2>Parsing</h2>
+    <script>
+        var Students=`{            
+            "name":"Emily",
+            "age":21,
+            "CGPA":9.8,
+            "course":"INT219"
+        }`
+        var student3=JSON.parse(Students);
+        document.write(student3.name +"<br>"+student3.age+"<br>" 
+        +student3.CGPA+"<br>"+student3.course);
+    </script>
+    
+</body>
+</html>
