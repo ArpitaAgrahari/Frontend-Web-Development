@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let arr = [1,2,3,4,5];
+        // let arr2 = new Array(7,8);
+        // for(let i=0;i<arr.length;i++){
+        //     document.write(arr[i]+" ");
+        // }
+        
+
+        //using foreach loop
+        // arr.forEach(function(value){
+        //     document.write(value+" ");
+        // });
+
+
+        //using arrow function
+        // arr.forEach((value)=>{
+        //     document.write(value+" ");
+        // });
+
+
+        //using for in loop
+        // for(let index in arr){
+        //     document.write(arr[index]+" ");
+        // }
+
+
+        //using for of loop
+        // for(let value of arr){
+        //     document.write(value+" ");
+        // }
+
+
+        //function to print array
+        // function printArray(arr){
+        //     for(let value of arr){
+        //         document.write(value+" ");
+        //     }
+        // }
+
+
+        //length of array
+        // document.write(arr.length);
+
+
+
+        //adding element to array
+        // arr.push(6);
+        // document.write("<br>");
+        // printArray(arr);
+
+        
+
+        // //removing element from array
+        // arr.pop();
+        // document.write("<br>");
+        // printArray(arr);
+
+        //map function
+        // let arr = [1,2,3,4,5];
+        // let arr2 = new Array(7,8);
+        // let arr3 = arr.map((value)=>{
+        //     return value*2;
+        // });
+        // printArray.forEach((value)=>{
+        //     document.write(value+" ");
+        // });
+
+
+        //create string array and apply push and pop
+        //functionalities of shift and unshift
+        //shift and unshift are used to add and remove elements from the beginning of the array
+        let arr = ["Mango","Apple","Banana","Grapes"];
+        arr.push("Orange");
+        printArray(arr);
+        document.write("<br>");
+        arr.pop();
+        printArray(arr);
+        function printArray(arr){
+            for(let value of arr){
+                document.write(value+" ");
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>

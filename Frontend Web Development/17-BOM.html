@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fun1">Click</button>
+    <script>
+        //BOM: Browser Object Model
+        //create a button and event confirmed will call
+
+        //using and implementation of alert and confirm
+        //confirm will return true or false
+        //alert will return undefined
+         //on confirm yes it will return data is save and if no data is not saved
+         function fun1(){
+            let a = window.confirm('are u sure?');
+            if(a==true){
+                window.alert('data is saved');
+            }
+            else{
+                window.alert('data is not saved');
+            }
+         }
+    </script>
+    <!-- <button onclick =" window.alert('This is an alert');">alert</button> -->
+
+
+    <!--open and close of window-->
+    <button onclick="window.open('https://www.google.com')">Open</button>
+    <button onclick="window.close()">Close</button>
+
+</body>
+</html>

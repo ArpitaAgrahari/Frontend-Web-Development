@@ -1,0 +1,69 @@
+
+    <!--create a page having 2 div classes and in first in left circle shaped image and in right of div some content and in secoond div in left some content and in right a tumbnail nad in 3 rd div in left unordered list-->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            margin-top: 25px;
+        }
+        .rounded-circle {
+            border: 3px solid #6c757d;
+        
+        }
+        .img-thumbnail {
+            border: 3px solid #6c757d;
+        }
+        p {
+            margin-top: 25px;
+            font-size: 1.2em;
+            color: #343a40;
+        }
+        ul {
+            margin-top: 75px;
+            font-size: 1.2em;
+            color: #343a40;
+        }
+        ul.unstyled {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <img class="rounded-circle" src="https://images.ctfassets.net/hrltx12pl8hq/4xEWHexAsVADeDxiCOObZ2/cea749f6cf5ffef05b98814e7ccf427d/Springtime-in-Japan.jpg" alt="Circle shaped image" height="250px" width="250px">
+            </div>
+            <div class="col-sm">
+                <p>The web development life cycle is a method that outlines the stages involved in building websites and web applications.<br>The web development life cycle is a method that outlines the stages involved in building websites and web applications</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm">
+                <p>The web development life cycle is a method that outlines the stages involved in building websites and web applications<br>
+                    The web development life cycle is a method that outlines the stages involved in building websites and web applications</p>
+            </div>
+            
+            <div class="col-sm">
+                <img class="thumbnail" src="https://images.ctfassets.net/hrltx12pl8hq/3KWcqxPlvmgkpMS5VdjLAk/3cbdd812faf4b8c343b259656d31a0ee/rendered_15.jpg" alt="Thumbnail 1" height="250px" width="500px" onclick="changeImage('https://images.ctfassets.net/hrltx12pl8hq/3KWcqxPlvmgkpMS5VdjLAk/3cbdd812faf4b8c343b259656d31a0ee/rendered_15.jpg')">
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm">
+                <ul class="unstyled">
+                    <li>Frontend</li>
+                    <li>Backened</li>
+                    <li>Web development</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

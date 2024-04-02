@@ -1,0 +1,47 @@
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CLick Me</h1>
+    <h2>we learning jquery</h2>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function(){
+            $("h1").css("color","powderblue");
+            $("h1").css("font-size","50px");
+            $("h2").css("color","red");
+            $("h2").css("font-size","40px");
+        });
+        </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<script>
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            alert("Hello World");
+        });
+        $("#btn1").click(function(){
+            alert("HTML: " + $("h1").html());
+        });
+    });
+</script>
+<body>
+    <h1>Hey!! there</h1>
+    <button id="btn">Click Me</button>
+    <button id="btn1">Show HTMl</button>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //implementing getter and setter in html for class 
+    class Student{
+        constructor(name){
+            this._name = name;
+        }
+        get name(){
+            return this._name;
+        }
+        set name(newName){
+            this._name = newName;
+        }
+    }
+    document.write("Before changing name: ");
+    let student = new Student("John");
+    document.write(student.name);
+    student.name = "Doe";
+    document.write("<br>After changing name: ");
+    document.write(student.name);
+</script>
+</body>
+</html>
+//either i care eniugh fir u ti die for u or you simply dont exist to me

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //DOM
+        //document object model
+        //document is the object of the html document
+        //document is the root of the html document
+        //document is the owner of all the objects of the html document
+    </script>
+    <!-- <p id="demo"></p> -->
+    <script>
+        //getelementById is a method
+        //getelementById is used to get the html element with the specified id
+        //innerHTML is a property
+        //innerHTML is used to get or change the content of the html element
+                 // document.getElementById("demo").innerHTML = "hello";
+    </script>
+    <!-- <p id="p">This is a paragraph</p>
+    <p class="intro">This is a paragraph.we are learnind DOM</p> -->
+
+    <script>
+    //finfing content in the paragraph using tag name and innerHTML
+        // const element = document.getElementById("p");
+        // document.getElementById("demo").innerHTML = 'the text in para'+ element[0].innerHTML;
+        // document.getElementsByClassName("intro").innerHTML = 'the text in para'+ element[0].innerHTML;
+    </script>
+    <!-- //to count the number of tags -->
+    <!-- <h2></h2>
+    <h2></h2>
+    <h2></h2>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <script>
+        //to check the times of existing of the tag
+        const a = document.getElementsByTagName("p").length;
+        document.write("The number of p tags: "+a+"<br>");
+        const b = document.getElementsByTagName("h2").length;
+        document.write("The number of h2 tags: "+b); -->
+
+
+
+    <!-- </script>
+    <input type = "radio" name="gender" value="Male">Male</input>
+    <br>
+    <input type = "radio" name="gender" value="Female">Female</input>
+    <br>
+    <input type = "radio" name="gender" value="Transgender">Transgender</input>
+    <br>
+    <script>
+        //create three labels and using getelementbyname count it
+        const a = document.getElementsByName("gender").length;
+        document.write("The number of labels: "+a);
+        
+    </script> -->
+
+
+<!--     
+    //query selector
+    //querySelector is a method
+    //querySelector is used to get the first element that matches the specified css selector(s) in the document -->
+    <input type="number" name="name" id="demo1">
+    <input type="number" name="name2" id="demo2"><br>
+    <button onclick="add()" id="demo3">ADD</button>
+    <p id="demo"></p>
+
+    <script>
+        let j=document.getElementById("demo1").value;
+        let k=document.getElementById("demo2").value;
+        function add(){
+            let c=a+b;
+            document.getElementById("demo").innerHTML=c;
+        }
+    </script>
+</body>
+</html>

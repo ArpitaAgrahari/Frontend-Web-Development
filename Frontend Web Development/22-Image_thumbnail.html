@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<style>
+  .gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-image {
+    margin-bottom: 20px;
+  }
+  
+  .thumbnail-container {
+    display: flex;
+  }
+  
+  .thumbnail {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+</style>
+</head>
+<body>
+
+<div class="gallery-container">
+  <div class="main-image">
+    <img id="mainImg" src="https://images.ctfassets.net/hrltx12pl8hq/4xEWHexAsVADeDxiCOObZ2/cea749f6cf5ffef05b98814e7ccf427d/Springtime-in-Japan.jpg" alt="Main Image" height="200px" width="100px">
+  </div>
+  
+  <div class="thumbnail-container" id="thumbnailContainer">
+    <img class="thumbnail" src="https://images.ctfassets.net/hrltx12pl8hq/3KWcqxPlvmgkpMS5VdjLAk/3cbdd812faf4b8c343b259656d31a0ee/rendered_15.jpg" alt="Thumbnail 1" onclick="changeImage('https://images.ctfassets.net/hrltx12pl8hq/3KWcqxPlvmgkpMS5VdjLAk/3cbdd812faf4b8c343b259656d31a0ee/rendered_15.jpg')">
+    <img class="thumbnail" src="https://images.ctfassets.net/hrltx12pl8hq/4xEWHexAsVADeDxiCOObZ2/cea749f6cf5ffef05b98814e7ccf427d/Springtime-in-Japan.jpg" alt="Thumbnail 2" onclick="changeImage('https://images.ctfassets.net/hrltx12pl8hq/4xEWHexAsVADeDxiCOObZ2/cea749f6cf5ffef05b98814e7ccf427d/Springtime-in-Japan.jpg')">
+    <img class="thumbnail" src="https://images.ctfassets.net/hrltx12pl8hq/6pIu2Km3uxy0An9lb6WCf/94bc13964c809002e450034c684f0757/Cinematic-Banner.jpg" alt="Thumbnail 3" onclick="changeImage('https://images.ctfassets.net/hrltx12pl8hq/6pIu2Km3uxy0An9lb6WCf/94bc13964c809002e450034c684f0757/Cinematic-Banner.jpg')">
+    <!-- Add more thumbnails as needed -->
+  </div>
+</div>
+
+<script >
+  function changeImage(imageUrl) {
+    document.getElementById('mainImg').src = imageUrl;
+  }
+  
+  // Optional: Preload images for smoother transition
+  const thumbnailImages = document.querySelectorAll('.thumbnail');
+  thumbnailImages.forEach(thumbnail => {
+    const imageUrl = thumbnail.getAttribute('src');
+    const image = new Image();
+    image.src = imageUrl;
+  });
+  
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="name"><br>
+        <input type="submit" name="submit" id="btn" value="Click Me" disabled="disabled">
+    </form>
+    <script>
+        $('name').keyup(function(){
+            if($(this).val() != ''){
+                $('#btn').attr('disabled', false);
+            }
+            else{
+                $('#btn').attr('disabled', true);
+            }
+        });
+    </script>
+</body>
+</html>

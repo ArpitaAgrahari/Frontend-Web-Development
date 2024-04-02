@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Adding new element using DOM</h3>
+    <script>
+        var e1=document.createElement("p");  //create a new paragraph element
+        var text=document.createTextNode("This is a new paragraph");   //create a text node
+        e1.appendChild(text);   //add the text to the created element
+        document.body.appendChild(e1);  //add the created element to the body
+        //e1.remove();
+    </script>
+    <h3>Adding element to parent elem</h3>
+    <div id="div1">   <!--create a div element-->
+        <p id="p1">This is a paragraph</p>   <!--create a paragraph element-->
+    </div>
+    <script>
+        var e2=document.createElement("p");  //create a new h1 element
+        var text2=document.createTextNode("This is a new heading");   //create a text node
+        var parent=document.getElementById("div1");  //get the div element
+        e2.appendChild(text1);   //add the text to the created element
+        parent.appendChild(e2);  //add the created element to the div
+    </script>
+    <h3>insert ele to specified position in parent using insertBefore</h3>
+    <div id="div2">   <!--create a div element-->
+        <p id="p2">This is a updated paragraph</p>   <!--create a paragraph element-->
+    </div>
+    <script>
+        var e3=document.createElement("p");  //create a new h1 element
+        var text3=document.createTextNode("This is a new heading");   //create a text node
+        var parent2=document.getElementById("div2");  //get the div element
+        var child=document.getElementById("p2");  //get the paragraph element
+        e3.appendChild(text3);   //add the text to the created element
+        parent2.insertBefore(e3,child);  //add the created element to the div
+
+    </script>
+    <h3>add html content directly using innerhtml</h3>
+    <div id="div3">   <!--create a div element-->
+        <p id="p3">This is a updated paragraph</p>   <!--create a paragraph element-->
+    </div>
+    <script>
+        var parent3=document.getElementById("div3");  //get the div element
+        parent3.innerHTML="<h1>This is a innerhtml heading</h1>";  //add the created element to the div
+    </script>
+    <h3>insert html at specified position relative to elemnt</h3>
+    <script>
+        var parent4=document.getElementById("div3");  //get the div element
+        //var child4=document.getElementById("p3");  //get the paragraph element
+        parent4.insertAdjacentHTML('beforebegin',"<h1>This is a beforebegin heading</h1>");  //add the created element to the div
+    </script>
+</body>
+</html>
