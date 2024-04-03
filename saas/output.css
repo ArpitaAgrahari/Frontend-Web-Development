@@ -3917,7 +3917,6 @@ textarea.form-control-lg {
 }
 
 .navbar-nav {
-    justify-content: flex-end;
   --bs-nav-link-padding-x: 0;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
@@ -3925,11 +3924,10 @@ textarea.form-control-lg {
   --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
   --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: var(--bs-navbar-active-color);
@@ -11847,4 +11845,4 @@ textarea.form-control-lg {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=output.css.map */

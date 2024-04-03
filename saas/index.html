@@ -6,8 +6,37 @@
     <link rel="stylesheet" href="main.css">
     <title>Bootstrap customization</title>
 </head>
+
+<!--bootsrrap application for creating header section for website add the wehsite title  logo to the left side. implement bootstrap dropdown menu on right hand side containing atleast 2 menu icon. design main conetnt section for website and icnlude some dummy content to stimulate a real world  sceniraio. ensure thta the navigation manu remains visible and responsive when scrolling-->
+
 <body>
-    <h1 class="text-danger">Hello</h1>
-    <button class="btn btn-success">btn</button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="https://images.ctfassets.net/hrltx12pl8hq/4xEWHexAsVADeDxiCOObZ2/cea749f6cf5ffef05b98814e7ccf427d/Springtime-in-Japan.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+            Study_Zone
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown ml-auto">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main role="main" class="container" style="margin-top: 70px;">
+        <h1>Web development</h1>
+        <p>The web development life cycle is a method that outlines the stages involved in building websites and web applications.The web development life cycle is a method that outlines the stages involved in building websites and web applicationsThe web development life cycle is a method that outlines the stages involved in building websites and web applicationsThe web development life cycle is a method that outlines the stages involved in building websites and web applicationsThe web development life cycle is a method that outlines the stages involved in building websites and web applications</p>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
